@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3A4D6C81B56307200B933BB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A4D6C71B56307200B933BB /* libsqlite3.tbd */; };
 		DC109CE11A0C4D970070988E /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC109CE01A0C4D970070988E /* Schema.swift */; };
 		DC109CE41A0C4F5D0070988E /* SchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC109CE31A0C4F5D0070988E /* SchemaTests.swift */; };
 		DC2393C81ABE35F8003FF113 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = DC2393C61ABE35F8003FF113 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +25,6 @@
 		DC37743B19C8D6C0004FCF85 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37743A19C8D6C0004FCF85 /* Statement.swift */; };
 		DC475EA219F219AF00788FBD /* ExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC475E9E19F2199900788FBD /* ExpressionTests.swift */; };
 		DC650B9619F0CDC3002FBE91 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC650B9519F0CDC3002FBE91 /* Expression.swift */; };
-		DC70AC991AC2331000371524 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37744219C8DC91004FCF85 /* libsqlite3.dylib */; };
 		DC70AC9A1AC2331100371524 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC37744219C8DC91004FCF85 /* libsqlite3.dylib */; };
 		DCAD429719E2E0F1004A51DF /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD429619E2E0F1004A51DF /* Query.swift */; };
 		DCAD429A19E2EE50004A51DF /* QueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD429919E2EE50004A51DF /* QueryTests.swift */; };
@@ -99,6 +99,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B3A4D6C71B56307200B933BB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DC109CE01A0C4D970070988E /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Schema.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DC109CE31A0C4F5D0070988E /* SchemaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaTests.swift; sourceTree = "<group>"; };
 		DC2393C61ABE35F8003FF113 /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
@@ -142,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC70AC991AC2331000371524 /* libsqlite3.dylib in Frameworks */,
+				B3A4D6C81B56307200B933BB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +216,7 @@
 		DC3773E919C8CBB3004FCF85 = {
 			isa = PBXGroup;
 			children = (
+				B3A4D6C71B56307200B933BB /* libsqlite3.tbd */,
 				DC37744719C8F50B004FCF85 /* README.md */,
 				DC97EC9F1ADE955E00F550A6 /* SQLite.playground */,
 				DC37742D19C8CC90004FCF85 /* SQLite */,
@@ -398,6 +400,8 @@
 		DC3773EA19C8CBB3004FCF85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Stephen Celis";
 				TargetAttributes = {

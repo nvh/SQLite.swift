@@ -11,7 +11,7 @@ class RTreeTests: SQLiteTestCase {
     var index: Query { return db["index"] }
 
     func test_createVtable_usingRtree_createsVirtualTable() {
-        db.create(vtable: index, using: rtree(id, minX, maxX, minY, maxY))
+        db.create(vtable: index, using: rtree(id, columns: minX, maxX, minY, maxY))
 
         AssertSQL("CREATE VIRTUAL TABLE \"index\" USING rtree(\"id\", \"minX\", \"maxX\", \"minY\", \"maxY\")")
     }
